@@ -1,0 +1,31 @@
+$ git add *. (tạo ra .git)
+$ git add 'tên file cần add'
+$ git commit -m "mô tả"
+$ git status (kiểm tra trạng thái file git)
+
+--clone kho về
+$ git clone 'link kho cần clone' 'tên thư mục trong máy'
+-- xóa tệp
+$ git rm 'tên tệp'
+--thấy các URL mà Git đã lưu trữ cho tên viết tắt được sử dụng khi đọc và ghi vào điều khiển từ xa đó:
+$ git remote -v
+--thêm kho lưu trử
+$ git remote add 'tên d.khien tu x' 'link kho'
+--tạo chi nhánh mới
+git branch 'name'
+-- chuyển nhánh
+git checkout 'name'
+--xem chi nhánh 
+git branch -v
+--đẩy file lên
+$ git push 'remote_name' 'name_branch'
+--xóa nhánh từ xa
+$ git push 'remote_name' --delete 'name_branch'
+-- backup
+$ git revert ip
+--xem tên điều khiển từ xa
+git remote
+--đổi tên điều khiển từ xa
+git remote rename 'tên cũ' 'tên mới'
+--xóa điều khiển từ xa
+git remote remove 'tên'
